@@ -8,10 +8,14 @@
 # (Use the included example file names.txt) and exists on the computer's disk.
 # Write a program that displays the number of names that are stored in the file.
 
+#Function to count the names (lines) in the names.txt file.
 def count_file_lines():
+#Open for reading.
     nameFile = open('names.txt', 'r')
+#Readlines and take the length.
     nameCounter = len(nameFile.readlines())
     nameFile.close()
+#Display to user.
     print(f'There are {nameCounter} name(s) in the names.txt file.')
 
 # You don't need to change anything below this line:
